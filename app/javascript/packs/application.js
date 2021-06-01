@@ -7,7 +7,15 @@ import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
+import jQuery from "jquery"
+global.$ = global.jQuery = jQuery
+window.$ = window.jQuery = jQuery
 
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+
+$(document).ready(function(){
+  console.log('hola desde jq')
+})
