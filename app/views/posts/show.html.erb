@@ -10,6 +10,10 @@
       <p class="lead">
         <%= @post.updated_at.strftime("%A, %B %e, %Y") %> by <%= @post.user.username %> | <%= pluralize(@post.views, "View") %>
       </p>
+      <hr class="my-4"/>
+      <div class="post_body">
+        <%= @post.body %>
+      </div>
     </div>
   </div>
 </div>

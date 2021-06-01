@@ -13,7 +13,7 @@ class Post < ApplicationRecord
   validates :body, length: {minimum: 25}
 
   #for the size of the img(i can do with css but also in this way)
-  def authomize_img(image, x, y)
+  def optimize_image(image, x, y)
     return image.variant(resize_to_fill: [x,y]).processed  
   end
 end
