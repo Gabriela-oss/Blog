@@ -19,3 +19,6 @@ ActiveStorage.start()
 $(document).ready(function(){
   console.log('hola desde jq')
 })
+
+require("trix")
+require("@rails/actiontext")

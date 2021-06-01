@@ -9,8 +9,8 @@ class Post < ApplicationRecord
   has_rich_text :body
 
   #Validations on this body:
-  validates :title, length: (minimun: 5)
-  validates :body, length: (minimun: 25)
+  validates :title, length: {minimum: 5}
+  validates :body, length: {minimum: 25}
 
   #for the size of the img(i can do with css but also in this way)
   def authomize_img(image, x, y)
