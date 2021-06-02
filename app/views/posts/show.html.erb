@@ -17,3 +17,14 @@
     </div>
   </div>
 </div>
+
+<div class="container">
+<!--we need to give it the parent of the thing we are creating(the parent it's the post), also this is the way to create something called local, this has a new comment in it, so when we do the form builder we can do that -->
+  <%= render 'comments/form', commentable: @post, local: Comment.new %> 
+
+  <div id="comment-pane">
+    <% @comment.each do |comment| %>
+    <% render comment %>
+    <% end %>
+  </div>
+</div>

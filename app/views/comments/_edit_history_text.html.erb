@@ -1,0 +1,14 @@
+<%= time_ago_in_words(comment.created_at) %> ago
+<br />
+<% edit_history = comment.edit_history == "" ? "" : "Last edited" + time_ago_in_words(comment.updated_at) + "ago" %>
+
+
+<%= link_to(edit_history, 'javascript:;', data: {toggle: "modal", target: "#edit_history"})%>
+
+if (user.age >= 21) {
+  can drink = true
+} else {
+  can drink = false 
+}
+
+bool can_drink = user.age >= 21? true : false

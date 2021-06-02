@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :comments, dependent: :destroy
+  has_one_attached :avatar
 
     #gaby@example.com -> self.email.split('@') -> ['gaby', 'example.com'] -> [0] -> 'gaby'.capitalize -> Gaby  
   def username 
