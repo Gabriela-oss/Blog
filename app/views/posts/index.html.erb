@@ -1,4 +1,9 @@
 <div class="container">
+  <div class="row">
+    <div class="digg_pagination">
+      <%= will_paginate @post, :container => false %>
+    </div>
+  </div>
   <% @posts.each do |post| %>
     <div class="row"> 
       <div class="card mb-3">

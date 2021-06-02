@@ -42,8 +42,6 @@ group :development do
   gem 'listen', '~> 3.3'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-
-  gem 'pry-rails'
 end
 
 group :test do
@@ -61,6 +59,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #my gems
 gem 'devise'
 gem 'simple_form'
-gem 'pry', '~> 0.13.1'
-gem 'pry-byebug'
 gem 'faker'
+gem 'will_paginate'
+#to dont apear in the buscador the id of my post
+gem 'friendly_id'
