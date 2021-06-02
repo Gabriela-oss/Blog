@@ -1,5 +1,9 @@
 class Post < ApplicationRecord
   belongs_to :user
+
+  #comments 
+  has_many :comments, as: :commentable, dependent: :destroy
+
   #Active storage from rails 5
   has_one_attached :image
   has_one_attached :photo
